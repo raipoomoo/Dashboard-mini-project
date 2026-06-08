@@ -3,6 +3,48 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
+# CSS STYLE BACKGROUND
+st.markdown(
+    """
+    <style>
+    /* App background */
+    .stApp {
+        background-color: #f7f8fc;
+    }
+
+    /* Main text */
+    h1, h2, h3, h4, p, div, label {
+        color: #1f2937;
+    }
+
+    /* Tabs (neutral grey style) */
+    .stTabs [data-baseweb="tab"] {
+        background-color: #eef1f6;
+        color: #1f2937;
+        border-radius: 8px 8px 0px 0px;
+        padding: 8px 14px;
+        border: 1px solid #d6dbe6;
+    }
+
+    /* Active tab (subtle blue, not purple) */
+    .stTabs [aria-selected="true"] {
+        background-color: #dbeafe;
+        color: #1e3a8a;
+        border-bottom: 2px solid #3b82f6;
+    }
+
+    /* Clean container spacing */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+## DASHBOARD
+
 #st.image(r'C:\Users\welcome\Desktop\BSMS1306\streamlit\Header.png')
 st.image('Header.jpg')
 
@@ -78,4 +120,3 @@ st.write("The analysis shows that social media usage, sleep patterns, physical a
 
 st.subheader("Conclusion")
 st.write("This project shows that lifestyle and digital habits are related to teenage mental health. Better sleep, regular exercise, and controlled social media use are associated with improved well-being. The results show patterns but not causation.")
-
