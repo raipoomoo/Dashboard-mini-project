@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-# CSS STYLE BACKGROUND
+# CSS Style Background
 st.markdown(
     """
     <style>
@@ -43,7 +43,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-## DASHBOARD
+## Main Dashboard Code
 
 #st.image(r'C:\Users\welcome\Desktop\BSMS1306\streamlit\Header.png')
 st.image('Header.jpg')
